@@ -11,14 +11,14 @@
 @implementation WizardOfOz
 
 - (BOOL) switchesFromBlackAndWhiteToColor {
-    /* WORK HERE */
+    /* Changed from No to Yes to make test work*/
     return YES;
     
 }
 
 - (NSString *) mainCharacter {
-    /* WORK HERE */
-    return @"";
+    /* Changed to include "Dorothy" to make test work*/
+    return @"Dorothy";
 }
 
 @end
