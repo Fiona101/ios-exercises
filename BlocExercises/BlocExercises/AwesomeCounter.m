@@ -14,28 +14,46 @@
     
     /* WORK HERE */
     
-    NSMutableString *counter = nil;
+    
+    NSMutableString *returnString = [@"" mutableCopy];
    
+    // note you can also use the below with stringByAppendingString
+    // NSString *anotherReturnString = @"";
+    
+    NSInteger x;
+    NSInteger y;
+    
     if (number > otherNumber) {
-      
-    NSMutableString *counter = @(otherNumber);
-        
-        for (NSInteger otherNumber = otherNumber; otherNumber < number; otherNumber++) {
-            
-        [counter appendString:[@(otherNumber) stringValue]];
-        }
+        // number is higher
+        x = otherNumber;
+        y = number;
         
     } else {
+        // otherNumber is higher or equal
         
-    NSMutableString *counter = @(number);
-        
-        for (NSInteger number = number; number < otherNumber; number++) {
-        
-        [counter appendString:[@(otherNumber) stringValue]];
+        x = number;
+        y = otherNumber;
         
     }
-    return counter;
+    // x is the lower number, y is higher or equal
+    
+    // count from x to y tracking current number
+    
+    for (NSInteger currentNumber = x; currentNumber <= y; currentNumber++) {
+        // append the current number to returnString
+    
+        [returnString appendString:[@(currentNumber) stringValue]];
+      // this can also be written as the below:
+        //  [returnString appendFormat:@"%ld",currentNumber];
+        
+        
+       // anotherReturnString = [anotherReturnString stringByAppendingString:[@(currentNumber) stringValue]];
     }
+
+    return returnString;
+    
+    // return anotherReturnString;
 }
+
 @end
 

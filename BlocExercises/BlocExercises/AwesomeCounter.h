@@ -16,7 +16,8 @@
  Example usage:
  
  @code
- NSString *numbers = [counter stringWithNumbersBetweenNumber:1 andOtherNumber:3];
+ AwesomeCounter *counterVVV = [[AwesomeCounter alloc] init];
+ NSString *numbers = [counterVVV stringWithNumbersBetweenNumber:1 andOtherNumber:3];
  // numbers is "123"
  @endcode
  
