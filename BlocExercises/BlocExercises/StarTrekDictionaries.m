@@ -12,12 +12,18 @@
 
 - (NSString *)favoriteDrinkForStarTrekCharacterDictionary:(NSDictionary *)characterDictionary {
     /* WORK HERE */
+   /*/ This method works with just the below line /*/
     
-
+    //return characterDictionary[@"favorite drink"];
+     
+     
+    NSString *returnString;
+    
+    
 NSString *favoriteDrink = characterDictionary[@"favorite drink"];
-    
-NSString *returnString = [NSString stringWithFormat:@"%@", favoriteDrink];
+returnString = [NSString stringWithFormat:@"%@", favoriteDrink];
 
+    
 return returnString;
     
 /*/ Test successful /*/
