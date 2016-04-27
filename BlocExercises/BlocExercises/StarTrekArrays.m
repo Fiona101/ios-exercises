@@ -44,63 +44,32 @@ NSArray *starTrekArrays =[characterString componentsSeparatedByString:@";"];
 
 
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
+    // thebelow line works successfully and is the more elegant solution
+//    return [[characterArray filteredArrayUsingPredicate:
+//             [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] 'Worf'"]] count] != 0;
+    
+    
     /* WORK HERE */
     
     BOOL boolReturn = NO;
     
-    NSMutableArray *searchArray = [[NSMutableArray alloc]init];
+    NSMutableArray *searchArray;// = [[NSMutableArray alloc]init];
     
-    searchArray = [NSMutableArray arrayWithArray:[@[characterArray] mutableCopy]];
+    searchArray = [characterArray mutableCopy];
     
     NSPredicate *worfPredicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c]'Worf'"];
     
-    
-    /*/ searchArray = [characterArray filteredArrayUsingPredicate:worfPredicate];/*/
-    
-    /*/ searchArray = [NSMutableArray arrayWithArray:characterArray];/*/
-    
-    /*/ NSPredicate *worfPredicate = [NSPredicate predicateWithFormat:@"SELF contains[c]'Worf'"];/*/
-    
-    /*/ NSUInteger arrayLength = 0;/*/
-    
-    /*/ NSMutableArray *searchArray = [[NSMutableArray alloc]init];
-    
-    [searchArray  addObjectsFromArray: [characterArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)]];
-    
-    NSPredicate *worfPredicate = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c]'Worf'"];/*/
-    
     [searchArray filterUsingPredicate:worfPredicate];
     
-    /*/ boolReturn = [worfPredicate evaluateWithObject:[searchArray]]; /*/
-    
-    /*/ [searchArray evaluateWithObject:worfPredicate]; /*/    
-    /*/ if {/*/
-    
-   /*/ [searchArray filterUsingPredicate:worfPredicate];/*/
-    
-    
-    /*/ arrayLength = [searchArray count];
-    
-    if ((arrayLength = 0)) {
-        
-        boolReturn = NO;
-        
-    } else {
-        boolReturn = NO;
-    }/*/
-    
-    if ((worfPredicate = nil)) {
-        
-        boolReturn = NO;
-        
-    } else {
+    if ([searchArray count] != 0) {
         
         boolReturn = YES;
+        
+    } else {
+        
+        boolReturn = NO;
     }
         
-        
-
-    /*/ BOOL boolReturn = [NSPredicate predicateWithFormat:@"SELF CONTAINS[c] 'Worf'"]; /*/
     
     return boolReturn;
 }
