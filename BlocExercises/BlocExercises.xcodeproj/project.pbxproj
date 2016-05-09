@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0494A6901CD926F900C41EE7 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 0494A68F1CD926F900C41EE7 /* Car.m */; };
 		17E46D20194763D70018BD4C /* EqualityDeterminer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E46D1F194763D70018BD4C /* EqualityDeterminer.m */; };
 		17E46D22194768C90018BD4C /* EqualityDeterminerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E46D21194768C90018BD4C /* EqualityDeterminerTests.m */; };
 		931AB0B11945063500B4FB76 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931AB0B01945063500B4FB76 /* XCTest.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0494A68E1CD926F900C41EE7 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Car.h; path = "../../../Desktop/Xcode Projects/Sandbox/Sandbox/Car.h"; sourceTree = "<group>"; };
+		0494A68F1CD926F900C41EE7 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Car.m; path = "../../../Desktop/Xcode Projects/Sandbox/Sandbox/Car.m"; sourceTree = "<group>"; };
 		17E46D1E194763D70018BD4C /* EqualityDeterminer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualityDeterminer.h; sourceTree = "<group>"; };
 		17E46D1F194763D70018BD4C /* EqualityDeterminer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualityDeterminer.m; sourceTree = "<group>"; };
 		17E46D21194768C90018BD4C /* EqualityDeterminerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualityDeterminerTests.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 		931AB0A21945060D00B4FB76 = {
 			isa = PBXGroup;
 			children = (
+				0494A68E1CD926F900C41EE7 /* Car.h */,
+				0494A68F1CD926F900C41EE7 /* Car.m */,
 				931AB0B61945063500B4FB76 /* BlocExercises */,
 				931AB0AF1945063500B4FB76 /* Frameworks */,
 				931AB0AE1945063500B4FB76 /* Products */,
@@ -321,6 +326,7 @@
 				936964A41947B1980021C271 /* StarTrekArrays.m in Sources */,
 				931AB0CB19464B7700B4FB76 /* SimpleCalculator.m in Sources */,
 				936964AA1947C8C40021C271 /* StarTrekDictionaries.m in Sources */,
+				0494A6901CD926F900C41EE7 /* Car.m in Sources */,
 				936964B81948F8130021C271 /* NumberHandler.m in Sources */,
 				936964B21947E12D0021C271 /* StarTrekDictionariesTests.m in Sources */,
 			);

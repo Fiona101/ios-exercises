@@ -12,6 +12,11 @@
 @interface StuffRemembererTests : XCTestCase
 
 @property (nonatomic, strong) StuffRememberer *rememberer;
+@property (nonatomic, strong) NSMutableArray *arrayToRemember;
+
+/*/ I have added the below property to give a strong reference for the first test /*/
+
+/*/ @property (nonatomic, strong) NSMutableArray *arrayToRemember;/*/
 
 @end
 
@@ -23,6 +28,7 @@
     // Put setup code here. This method is called before the invocation of each test method in the class.
     
     self.rememberer = [[StuffRememberer alloc] init];
+    
 }
 
 - (void)tearDown
